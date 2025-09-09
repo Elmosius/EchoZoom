@@ -7,3 +7,21 @@
     font-family: 'Inter', sans-serif;
   }
 }
+
+@theme {
+  --color-primary: #faf7f2;
+  --color-secondary: #d7c4ac;
+  --color-accent: #1c1a18;
+}
+
+@layer components {
+  img {
+    @apply rounded-lg object-cover absolute left-0 top-0 w-full h-full brightness-90;
+  }
+
+  img.mask {
+    mask-image: url('/images/mask-cube.png');
+    mask-size: cover;
+    mask-position: center;
+  }
+}

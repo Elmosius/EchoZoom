@@ -1,3 +1,10 @@
+import Hero from './components/Hero';
+
 export default function App() {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+  return (
+    <main className='min-h-screen bg-primary'>
+      <p className='absolute inset-0 p-4 text-accent/50 font-bold text-5xl'>Scroll down</p>
+      <Hero />
+    </main>
+  );
 }
